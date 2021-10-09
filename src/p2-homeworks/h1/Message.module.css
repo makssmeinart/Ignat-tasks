@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    gap: 5px;
+    color: whitesmoke;
+}
+.holder {
+    position: relative;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0, 1);
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+.holder:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid rgba(0,0,0, 1);
+    left: -10px;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.avatar img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+}
+.name {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.time {
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
